@@ -13,11 +13,12 @@ import GoogleSignIn
 
 class LoginViewController: UIViewController, FBSDKLoginButtonDelegate, GIDSignInUIDelegate {
 
-    @IBOutlet weak var connectButton: UIButton!
+
+    //@IBOutlet weak var connectButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Login"
-        connectButton.layer.cornerRadius = 5
+        //connectButton.layer.cornerRadius = 5
         // Do any additional setup after loading the view, typically from a nib.
         
         setupFbButton()
@@ -37,7 +38,12 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate, GIDSignIn
         googleButton.frame = CGRect(x: 16, y: 116 + 66, width: view.frame.width - 32, height: 50)
         view.addSubview(googleButton)
         
-        
+        let customGoogleButton = UIButton(type: .system)
+        customGoogleButton.frame = CGRect(x: 16, y: 116 + 66 + 66, width: view.frame.width - 32, height: 50)
+        customGoogleButton.backgroundColor = .orange
+        customGoogleButton.setTitle("Google Custom", for: .normal)
+        customGoogleButton.addTarget(self, action: #selector(handleCustomGoogleSignIn), for: .touchUpInside)
+        view.addSubview(customGoogleButton)
         GIDSignIn.sharedInstance().uiDelegate = self
         
     }
@@ -78,7 +84,7 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate, GIDSignIn
     }
 
     @IBAction func connect(_ sender: Any) {
-        performSegue(withIdentifier: "showHome", sender: nil)
+        //performSegue(withIdentifier: "showHome", sender: nil)
     }
     
 }

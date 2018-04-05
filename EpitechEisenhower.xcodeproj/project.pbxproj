@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		491F10DA2076E0EB00CDF3C1 /* Profil Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 491F10D92076E0EB00CDF3C1 /* Profil Button.png */; };
+		498F6A622075676E0047E182 /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498F6A612075676E0047E182 /* TaskViewController.swift */; };
 		49EF7CCB207248D6004D0920 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 49EF7CCA207248D5004D0920 /* GoogleService-Info.plist */; };
 		9A5623D51F7940280009CD23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5623D41F7940280009CD23 /* AppDelegate.swift */; };
 		9A5623D71F7940280009CD23 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5623D61F7940280009CD23 /* LoginViewController.swift */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		491F10D92076E0EB00CDF3C1 /* Profil Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Profil Button.png"; sourceTree = SOURCE_ROOT; };
+		498F6A612075676E0047E182 /* TaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewController.swift; sourceTree = "<group>"; };
 		49EF7CCA207248D5004D0920 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		49EF7CCC207367C9004D0920 /* EpitechEisenhower.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EpitechEisenhower.entitlements; sourceTree = "<group>"; };
 		4E60E0F292F88FFB2B5666B1 /* Pods-EpitechEisenhower.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EpitechEisenhower.release.xcconfig"; path = "Pods/Target Support Files/Pods-EpitechEisenhower/Pods-EpitechEisenhower.release.xcconfig"; sourceTree = "<group>"; };
@@ -84,11 +88,13 @@
 				49EF7CCC207367C9004D0920 /* EpitechEisenhower.entitlements */,
 				9A5623D41F7940280009CD23 /* AppDelegate.swift */,
 				9A5623D61F7940280009CD23 /* LoginViewController.swift */,
+				498F6A612075676E0047E182 /* TaskViewController.swift */,
 				9A5623D81F7940280009CD23 /* Main.storyboard */,
 				9A5623DB1F7940280009CD23 /* Assets.xcassets */,
 				9A5623DD1F7940280009CD23 /* LaunchScreen.storyboard */,
 				49EF7CCA207248D5004D0920 /* GoogleService-Info.plist */,
 				9A5623E01F7940280009CD23 /* Info.plist */,
+				491F10D92076E0EB00CDF3C1 /* Profil Button.png */,
 			);
 			path = EpitechEisenhower;
 			sourceTree = "<group>";
@@ -161,6 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A5623DF1F7940280009CD23 /* LaunchScreen.storyboard in Resources */,
+				491F10DA2076E0EB00CDF3C1 /* Profil Button.png in Resources */,
 				49EF7CCB207248D6004D0920 /* GoogleService-Info.plist in Resources */,
 				9A5623DC1F7940280009CD23 /* Assets.xcassets in Resources */,
 				9A5623DA1F7940280009CD23 /* Main.storyboard in Resources */,
@@ -247,6 +254,7 @@
 			files = (
 				9A5623D71F7940280009CD23 /* LoginViewController.swift in Sources */,
 				9A5623D51F7940280009CD23 /* AppDelegate.swift in Sources */,
+				498F6A622075676E0047E182 /* TaskViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

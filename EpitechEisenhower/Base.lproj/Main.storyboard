@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QoZ-wT-c97">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QoZ-wT-c97">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -43,46 +43,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mU7-pM-bLz">
-                                <rect key="frame" x="112" y="378" width="150" height="50"/>
-                                <color key="backgroundColor" red="1" green="0.72549019607843135" blue="0.21568627450980393" alpha="0.90000000000000002" colorSpace="calibratedRGB"/>
-                                <accessibility key="accessibilityConfiguration" hint="Button for connection" identifier="ConnectButton" label="Connect"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="6U6-an-LYX"/>
-                                    <constraint firstAttribute="height" constant="50" id="Hnr-th-JsM"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="24"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ou2-2y-lk2">
+                                <rect key="frame" x="105" y="461" width="166" height="34"/>
+                                <color key="backgroundColor" red="1" green="0.72549019609999998" blue="0.2156862745" alpha="0.90000000000000002" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Connect">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="connect:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zxs-rV-mdB"/>
+                                    <segue destination="yYv-Gq-Pjc" kind="show" id="kdd-qU-owx"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.50196078430000002" green="0.79215686269999996" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="mU7-pM-bLz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="G5x-Bw-Gwv"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="mU7-pM-bLz" secondAttribute="bottom" constant="175" id="wbP-8g-QMS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ou2-2y-lk2" secondAttribute="trailing" constant="104" id="KZl-lC-nZk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ou2-2y-lk2" secondAttribute="bottom" constant="108" id="Zjw-6k-Z2P"/>
+                            <constraint firstItem="ou2-2y-lk2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="105" id="aMQ-3w-3J3"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="Oha-Ie-XXa"/>
-                    <connections>
-                        <outlet property="connectButton" destination="mU7-pM-bLz" id="tMa-xC-qtt"/>
-                        <segue destination="aQl-vJ-Kvq" kind="show" identifier="showHome" id="rzb-4l-RZT"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-673" y="100"/>
+            <point key="canvasLocation" x="-674.39999999999998" y="99.400299850074973"/>
         </scene>
         <!--Home-->
         <scene sceneID="r1S-cp-czb">
             <objects>
                 <collectionViewController title="Home" id="aQl-vJ-Kvq" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="RVm-eJ-QHq">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="RVm-eJ-QHq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.50196078430000002" green="0.79215686269999996" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="tZQ-ER-dku">
@@ -111,5 +103,101 @@
             </objects>
             <point key="canvasLocation" x="41" y="99"/>
         </scene>
+        <!--Home-->
+        <scene sceneID="1Xe-lZ-T6S">
+            <objects>
+                <viewController title="Home" id="yYv-Gq-Pjc" customClass="TaskViewController" customModule="EpitechEisenhower" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CgV-Am-p2q">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0PQ-Fw-L3j">
+                                <rect key="frame" x="328" y="20" width="31" height="31"/>
+                                <state key="normal" image="Profil Button.png"/>
+                                <connections>
+                                    <segue destination="wMG-nR-rCE" kind="show" id="Upm-Sp-DrA"/>
+                                </connections>
+                            </button>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Qie-NB-asg">
+                                <rect key="frame" x="32" y="80" width="310" height="476"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="gge-33-FPs">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="qZw-cb-3KY">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.50196078430000002" green="0.79215686269999996" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Qie-NB-asg" firstAttribute="top" secondItem="0PQ-Fw-L3j" secondAttribute="bottom" constant="29" id="3El-3L-tNy"/>
+                            <constraint firstItem="BJL-NC-mJB" firstAttribute="trailing" secondItem="Qie-NB-asg" secondAttribute="trailing" constant="33" id="6Hg-x1-4m3"/>
+                            <constraint firstItem="Qie-NB-asg" firstAttribute="leading" secondItem="BJL-NC-mJB" secondAttribute="leading" constant="32" id="Gtw-is-AWG"/>
+                            <constraint firstItem="BJL-NC-mJB" firstAttribute="bottom" secondItem="Qie-NB-asg" secondAttribute="bottom" constant="47" id="Ok0-Gs-jo6"/>
+                            <constraint firstItem="0PQ-Fw-L3j" firstAttribute="top" secondItem="BJL-NC-mJB" secondAttribute="top" constant="20" id="kgl-5Y-aBa"/>
+                            <constraint firstItem="BJL-NC-mJB" firstAttribute="trailing" secondItem="0PQ-Fw-L3j" secondAttribute="trailing" constant="16" id="q3t-E8-o9X"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="BJL-NC-mJB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rR6-Js-ctg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-674" y="878"/>
+        </scene>
+        <!--Your Profile-->
+        <scene sceneID="GJg-f3-oki">
+            <objects>
+                <viewController title="Your Profile" id="wMG-nR-rCE" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FVk-xR-XDq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Nom" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NNs-ez-YPp">
+                                <rect key="frame" x="63" y="173" width="248" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.44420055455295027" green="0.74970366396688715" blue="0.80250463448172593" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Description" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sMW-N7-Zbf">
+                                <rect key="frame" x="63" y="236" width="248" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.44420055460000002" green="0.74970366399999999" blue="0.80250463449999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Adresse mail" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E9S-aU-fL8">
+                                <rect key="frame" x="63" y="335" width="248" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.44420055460000002" green="0.74970366399999999" blue="0.80250463449999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.50196078430000002" green="0.79215686269999996" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="VHE-q5-Yc9"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qc1-XV-b0G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="41" y="878"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="Profil Button.png" width="31" height="31"/>
+    </resources>
 </document>
