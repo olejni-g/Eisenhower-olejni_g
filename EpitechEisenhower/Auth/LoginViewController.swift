@@ -14,12 +14,13 @@ import GoogleSignIn
 class LoginViewController: UIViewController, FBSDKLoginButtonDelegate, GIDSignInUIDelegate {
 
 
-
+    @IBOutlet weak var connectionButton: UIButton!
+    
     //@IBOutlet weak var connectButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Login"
-        //connectButton.layer.cornerRadius = 5
+        connectionButton.layer.cornerRadius = 5
         // Do any additional setup after loading the view, typically from a nib.
         
         setupFbButton()

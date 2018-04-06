@@ -25,8 +25,15 @@ class ProfileViewController: UIViewController {
         pswdButton.layer.cornerRadius = 5
         saveButton.layer.cornerRadius = 5
         logoutButton.layer.cornerRadius = 5
-        // Do any additional setup after loading the view, typically from a nib.
         
-
     }
+    
+    @IBAction func saveChanges(_ sender: Any) {
+        _ = navigationController?.popViewController(animated: true)
+    }
+    
+    /*@IBAction func logout(_ sender: Any) {
+        _ = navigationController?.popViewController(animated: true)
+    }*/
+    
 }

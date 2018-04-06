@@ -64,6 +64,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="Oha-Ie-XXa"/>
+                    <connections>
+                        <outlet property="connectionButton" destination="ou2-2y-lk2" id="F8a-pj-WDL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -194,6 +197,9 @@
                                 <rect key="frame" x="115" y="508" width="146" height="30"/>
                                 <color key="backgroundColor" red="0.97254901960784312" green="0.72941176470588232" blue="0.20392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Save changes"/>
+                                <connections>
+                                    <action selector="saveChanges:" destination="wMG-nR-rCE" eventType="touchUpInside" id="eWs-dt-0Zs"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q7t-tZ-eGl">
                                 <rect key="frame" x="138" y="553" width="99" height="30"/>
