@@ -29,11 +29,8 @@ class ProfileViewController: UIViewController {
     }
     
     @IBAction func saveChanges(_ sender: Any) {
+        //save stuff
         _ = navigationController?.popViewController(animated: true)
     }
-    
-    /*@IBAction func logout(_ sender: Any) {
-        _ = navigationController?.popViewController(animated: true)
-    }*/
     
 }

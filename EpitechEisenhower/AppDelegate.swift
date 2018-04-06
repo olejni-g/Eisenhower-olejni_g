@@ -53,7 +53,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
                 return
             }
             guard let uid = user?.uid else { return }
-            print("Google Firebase login success: ", user?.uid)
+            print("Google Firebase login success: ", uid)
         })
     }
 

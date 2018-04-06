@@ -16,7 +16,6 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate, GIDSignIn
 
     @IBOutlet weak var connectionButton: UIButton!
     
-    //@IBOutlet weak var connectButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Login"
@@ -32,22 +31,15 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate, GIDSignIn
         view.addSubview(facebookButton)
         facebookButton.frame = CGRect(x: 16, y: 100, width: view.frame.width - 32, height: 50)
         facebookButton.delegate = self
-        facebookButton.layer.cornerRadius = 10
+        facebookButton.layer.cornerRadius = 5
     }
     
     func setupGoogleButton() {
-        //add google button
         let googleButton = GIDSignInButton()
         googleButton.frame = CGRect(x: 16, y: 116 + 66, width: view.frame.width - 32, height: 50)
         view.addSubview(googleButton)
-        googleButton.layer.cornerRadius = 10
+        googleButton.layer.cornerRadius = 5
         
-        /*let customGoogleButton = UIButton(type: .system)
-        customGoogleButton.frame = CGRect(x: 16, y: 116 + 66 + 66, width: view.frame.width - 32, height: 50)
-        customGoogleButton.backgroundColor = .red
-        customGoogleButton.setTitle("Google Custom", for: .normal)
-        customGoogleButton.addTarget(self, action: #selector(handleCustomGoogleSignIn), for: .touchUpInside)
-        view.addSubview(customGoogleButton)*/
         GIDSignIn.sharedInstance().uiDelegate = self
         
     }

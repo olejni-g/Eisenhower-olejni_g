@@ -188,7 +188,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FZZ-ed-HzA">
-                                <rect key="frame" x="183" y="460" width="128" height="29"/>
+                                <rect key="frame" x="191" y="460" width="120" height="29"/>
                                 <color key="backgroundColor" red="0.3411764705882353" green="0.86274509803921573" blue="0.2627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <state key="normal" title="Renew Password"/>
@@ -221,6 +221,7 @@
                             <constraint firstItem="OgU-4I-tTo" firstAttribute="top" secondItem="FZZ-ed-HzA" secondAttribute="bottom" constant="19" id="VGD-j1-jMs"/>
                             <constraint firstItem="PNK-7x-uao" firstAttribute="leading" secondItem="VHE-q5-Yc9" secondAttribute="leading" constant="63" id="VOH-jf-fuZ"/>
                             <constraint firstItem="E9S-aU-fL8" firstAttribute="leading" secondItem="VHE-q5-Yc9" secondAttribute="leading" constant="63" id="WHE-mB-jgG"/>
+                            <constraint firstItem="FZZ-ed-HzA" firstAttribute="leading" secondItem="VHE-q5-Yc9" secondAttribute="leading" constant="183" id="Xfp-6C-CNn"/>
                             <constraint firstItem="NHR-lJ-RJ0" firstAttribute="top" secondItem="PNK-7x-uao" secondAttribute="bottom" constant="26" id="Y2j-qa-tFu"/>
                             <constraint firstItem="VHE-q5-Yc9" firstAttribute="trailing" secondItem="q7t-tZ-eGl" secondAttribute="trailing" constant="138" id="ZfS-tB-e6q"/>
                             <constraint firstItem="FZZ-ed-HzA" firstAttribute="top" secondItem="E9S-aU-fL8" secondAttribute="bottom" constant="17" id="gIS-LM-V5U"/>
